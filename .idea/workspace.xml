@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea0cafc-e860-439f-a944-1270e8aea935" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dea0cafc-e860-439f-a944-1270e8aea935" name="Changes" comment="Modelisation terminée, début d'implémentation des modèles">
+      <change afterPath="$PROJECT_DIR$/Softdesk/Softdesk/authentication/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Softdesk/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Softdesk/Softdesk/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/Softdesk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Softdesk/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Softdesk/desk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/desk/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softdesk/desk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Softdesk/Softdesk/desk/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,14 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Jérémy/Desktop/Projets OCS/OCS_Projet_9",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jérémy\PycharmProjects\OCS_Projet_9\Softdesk\Softdesk" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,10 +73,35 @@
       <option name="presentableId" value="Default" />
       <updated>1740416158562</updated>
     </task>
+    <task id="LOCAL-00001" summary="Modelisation terminée, début d'implémentation des modèles">
+      <option name="closed" value="true" />
+      <created>1741362524244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741362524244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modelisation terminée, début d'implémentation des modèles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modelisation terminée, début d'implémentation des modèles" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "master",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "master",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "master",
+      "currentBranchFilter": true
+    },
     {
       "branch": "master",
       "currentBranchFilter": true
