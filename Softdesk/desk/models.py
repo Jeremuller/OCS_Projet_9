@@ -38,3 +38,47 @@ class Contributor(models.Model):
 
     def __str__(self):
         return f"{self.user.username} -> {self.project.name} ({self.role})"
+
+
+class Issue(models.Model):
+
+    PRIORITY = [
+        ("LOW", "Low"),
+        ("MEDIUM", "Medium"),
+        ("HIGH", "High")
+    ]
+
+    STATUS = [
+        ("TODO", "Todo"),
+        ("IN_PROGRESS", "In progress"),
+        ("DONE", "Done")
+    ]
+
+    TAG = [
+        ("BUG", "Bug"),
+        ("TASK", "Task"),
+        ("ENHANCEMENT", "Enhancement")
+    ]
+
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    project = models.ForeignKey("Project", on_delete=models.CASCADE, related_name="issues")
+    status = models.CharField(max_length=15, choices=STATUS, default="TODO")
+    priority = models.CharField(max_length=10, choices=PRIORITY, default="MEDIUM")
+    tag = models.CharField(max_length=15, choices=TAG)
+    assign = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True,
+                                 related_name="assigned_issues")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.title} - {self.get_status_display()}"
+
+
+class Comment(models.Model):
+    issue = models.ForeignKey("Issue", on_delete=models.CASCADE, related_name="comments")
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="comments")
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Comment by {self.author} on {self.issue.title}"
