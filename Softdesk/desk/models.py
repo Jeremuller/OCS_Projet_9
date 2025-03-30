@@ -57,7 +57,7 @@ class Issue(models.Model):
     TAG = [
         ("BUG", "Bug"),
         ("TASK", "Task"),
-        ("ENHANCEMENT", "Enhancement")
+        ("FEATURE", "Feature")
     ]
 
     title = models.CharField(max_length=255)
